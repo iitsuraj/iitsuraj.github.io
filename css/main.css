@@ -1,0 +1,129 @@
+.h-100vh {
+    height: 100vh;
+}
+
+.intro {
+    background-color: #000;
+}
+
+.profile-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff
+}
+
+.social-media {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-media ul,
+.navbar ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+.social-media ul li {
+    margin-right: 2rem;
+}
+
+.social-media ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Second Bar */
+.navbar ul li {
+    margin-right: 50px;
+}
+
+.navbar ul li:last-child {
+    margin-right: 0;
+}
+
+.navbar ul li a {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+.navbar ul li a.active {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+.navbar ul li a:before,
+.navbar ul li a:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    top: 50%;
+    margin-top: -0.5px;
+    background: #2400ed;
+}
+
+.navbar ul li a:before {
+    left: -2.5px;
+}
+
+.navbar ul li a:after {
+    right: 2.5px;
+    background: #2400ed;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.navbar ul li a:hover:before {
+    background: #2400ed;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.navbar ul li a:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+}
+
+.navbar ul li a.active:before {
+    background: #2400ed;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.navbar ul li a.active:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+}
+
+.h-20 {
+    height: 20rem;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+
+}
+
+.copyright {
+    position: absolute;
+    top: 90%;
+    right: 0;
+}
+
+.hello {
+    color: aqua;
+}
