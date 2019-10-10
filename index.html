@@ -6,29 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Suraj Saini</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.108cc16f.css">
+    <link rel="stylesheet" href="./css/new.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body class="h-100vh">
+<body>
     <section>
-        <div class="container-fluid m-0">
-            <div class="row">
-                <div class="col-md-6 intro h-100vh">
-                    <div class="profile-container">
-                        <div class="profile">
+        <div class="container-fluid">
+            <div class="profile-container">
+                <div class="w-50 h-100 intro m-0">
+                    <div class="profile">
+                        <div class="profile-img">
                             <img src="./img/suraj.png" class="w-100" alt="">
                         </div>
-                        <div class="about-me text-center mt-1">
-                            <h1>
-                                Hi, This is <b>Suraj</b>
+                        <div class="text-center mt-1">
+                            <h1 class="text-white">
+                                Hi, This is Suraj
                             </h1>
-                            <p class="mt-2">
+                            <p class="text-white">
                                 i'm a freelancer
                             </p>
                         </div>
-                        <div class="social-media mt-4">
+                        <div class="social-media text-center">
                             <ul>
                                 <li>
                                     <a href="#">FB.</a>
@@ -43,57 +43,101 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 h-100vh">
-                    <div class="nav-container d-flex justify-content-end mt-4">
+                <div class="w-50 h-100 about">
+                    <div class="cover"></div>
+                    <div class="navbar-container">
                         <div class="navbar">
-                            <ul class="">
+                            <ul class="nav-items">
                                 <li>
-                                    <a href="#" class="active">About</a>
+                                    <a id="about-nav">About</a>
                                 </li>
                                 <li>
-                                    <a href="#">Project</a>
-                                </li>
-                                <li>
-                                    <a href="#">Contact</a>
+                                    <a id="project-nav">Project</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="info-container pt-5 px-3">
-                        <div class="heading">
-                            <h2>
-                                Writing About Design
-                            </h2>
+                    <div class="container pt-3 about-info holder">
+
+                        <div class="info">
+                            <h1>
+                                Info
+                            </h1>
+                            <p>
+                                Born in Rajasthan in 2001. In my College life, I started doing design and Web
+                                development.
+                                And I found my self doing this work happy.
+                                Since 2017, we have started activities as an individual web designer and have been able
+                                to
+                                provide one-stop support for photography, design, and coding.
+                            </p>
+                            <h1>
+                                Skills
+                            </h1>
+                            <p>
+                                Born in Rajasthan in 2001. In my College life, I started doing design and Web
+                                development.
+                                provide one-stop support for photography, design, and coding.
+                            </p>
                         </div>
-                        <div class="slider pt-3">
+                    </div>
+                    <div class="container pt-3 project-infos holder">
+                        <div class="project-holder row">
                             <div class="swiper-container">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide" style="background-image:url(./img/suraj.png)">
-
+                                    <div class="swiper-slide">
+                                        <div class="project col-12">
+                                            <a href="#">
+                                                <div class="project-img">
+                                                    <img src="./img/kuafu.jpg" class="w-100" alt="">
+                                                </div>
+                                                <div class="project-info">
+                                                    <p class="text-center">
+                                                        Project Name
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="swiper-slide" style="background-image:url(./img/suraj.png)">
-
+                                    <div class="swiper-slide">
+                                        <div class="project col-12">
+                                            <a href="#">
+                                                <div class="project-img">
+                                                    <img src="./img/kuafu.jpg" class="w-100" alt="">
+                                                </div>
+                                                <div class="project-info">
+                                                    <p class="text-center">
+                                                        Project Name
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="swiper-slide" style="background-image:url(./img/suraj.png)">
-
+                                    <div class="swiper-slide">
+                                        <div class="project col-12">
+                                            <a href="#">
+                                                <div class="project-img">
+                                                    <img src="./img/kuafu.jpg" class="w-100" alt="">
+                                                </div>
+                                                <div class="project-info">
+                                                    <p class="text-center">
+                                                        Project Name
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="copyright">
-                        <p class="pr-5">
-                            <span>
-                                &copy;
-                            </span>
-                            Suraj Saini
-
-                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
