@@ -1,4 +1,17 @@
 $(document).ready(function() {
+  var swiper = new Swiper(".swiper-container", {
+    grabCursor: true,
+    spaceBetween: 30,
+    slidesPerView: "auto",
+    dragable: true,
+    lazy: true,
+    observer: true,
+    observeParents: true,
+    navigation: {
+      nextEl: ".next-button",
+      prevEl: ".prev-button"
+    }
+  });
   var tl = new TimelineMax();
   var cover = $(".cover");
   tl.to(cover, 1, {
@@ -9,7 +22,6 @@ $(document).ready(function() {
   var aboutNav = $("#about-nav");
   var projectNav = $("#project-nav");
   aboutNav.click(function() {
-    aboutNav.prop("disabled", true);
     tl.to(cover, 1, {
       scaleX: 1,
       transformOrigin: "left",
@@ -26,7 +38,6 @@ $(document).ready(function() {
         transformOrigin: "left",
         ease: Power1.easeIn
       });
-    $(this).attr("disabled", false);
   });
   projectNav.click(function() {
     tl.to(cover, 1, {
@@ -39,25 +50,11 @@ $(document).ready(function() {
       })
       .to(".project-infos", 1, {
         display: "block"
+      })
+      .to(cover, 1, {
+        scaleX: 0,
+        transformOrigin: "left",
+        ease: Power1.easeIn
       });
-    $(".project-infos").css("display", "block");
-    var swiper = new Swiper(".swiper-container", {
-      direction: "vertical",
-      grabCursor: true,
-      spaceBetween: 30,
-      centeredSlides: true,
-      slidesPerView: "auto",
-      mousewheel: true,
-      dragable: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-      }
-    });
-    tl.to(cover, 1, {
-      scaleX: 0,
-      transformOrigin: "left",
-      ease: Power1.easeIn
-    });
   });
 });
