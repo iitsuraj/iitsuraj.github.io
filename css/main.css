@@ -93,7 +93,7 @@
   display: block;
   cursor: pointer;
   text-decoration: none;
-  color: #000;
+  color: #f47301;
   font-size: 25px;
 }
 
@@ -102,7 +102,7 @@
   display: block;
   cursor: pointer;
   text-decoration: none;
-  color: #000;
+  color: #f47301;
   font-size: 25px;
 }
 
@@ -114,7 +114,7 @@
   height: 2px;
   top: 50%;
   margin-top: -0.5px;
-  background: #2400ed;
+  background: #000;
 }
 
 .navbar ul li a:before {
@@ -123,12 +123,12 @@
 
 .navbar ul li a:after {
   right: 2.5px;
-  background: #2400ed;
+  background: #000;
   transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .navbar ul li a:hover:before {
-  background: #2400ed;
+  background: #000;
   width: 100%;
   transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
@@ -140,7 +140,7 @@
 }
 
 .navbar ul li a.active:before {
-  background: #2400ed;
+  background: #000;
   width: 100%;
   transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
